@@ -77,7 +77,8 @@ input:focus ~ label, input:valid ~ label{
 }
 
 .forgot label input {
-  margin-right: 3px;
+    margin-top: 4.8px;
+    margin-right: 5px;
 }
 .forgot label a {
   color: #fff;
@@ -114,4 +115,7 @@ p{
 .form-container a{
     text-decoration: none;
     color: white;
+}
+.checkbox{
+    padding-top: 0px;
 }

@@ -4,28 +4,28 @@
     padding: 0;
     font-family: "Poppins", sans-serif;
 }
-.registeration{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        min-height: 100vh;
-        background: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
-        no-repeat;
-        background-position: center;
-        background-size: cover;
-}
-.reg_form{
-    position: relative;
-    color: white;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    border-radius: 20px;
-    width: 400px;
-    height: 550px;
+.forgotPassword{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.for_form{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
     backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 h2{
     color: white;
@@ -37,24 +37,31 @@ h2{
     margin: 30px 0;
     width: 300px;
     border-bottom: 2px solid white;
+
 }
 .input-box input{
+    background: transparent;
     border: none;
     outline: none;
-    background: transparent;
     width: 100%;
-    height: 30px;
+    height: 100%;
     font-size: 1em;
-    color: white;
     padding: 0 35px 0 5px;
+    color: white;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .input-box label{
     position: absolute;
     color: white;
     top: 50%;
     left: 5px;
-    transform: translateY(-50%);
     font-size: 1em;
+    transform: translateY(-50%);
     transition: 0.5s;
 }
 input:focus ~ label, input:valid ~ label{
@@ -63,36 +70,27 @@ input:focus ~ label, input:valid ~ label{
     font-weight: bold;
     font-style: italic;
 }
-.input-box ion-icon {
+.input-box ion-icon{
     position: absolute;
-    right: 8px;
-    color: #fff;
-    font-size: 1.2em;
-    top: 0.25em;
+    right: 5px;
 }
 button{
-    background: white;
+    background-color: white;
+    border: none;
     width: 100%;
     height: 40px;
     border-radius: 40px;
-    border: none;
     font-size: 1em;
     font-weight: 600;
-    cursor: pointer;
     outline: none;
+    cursor: pointer;
 }
 p{
     color: white;
     font-size: 0.9em;
-    text-align: center;
+    text-align: justify;
     margin: 15px 0 10px;
-}
-.reg_form a{
-    text-decoration: none;
-    color: white;
-}
-.login:hover{
+    width: 80%;
+    margin: 30px;
     text-decoration: underline;
-    /* font-style: italic; */
-    font-weight: 500;
 }
